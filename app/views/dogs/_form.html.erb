@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :Owner_id %><br>
-    <%= f.number_field :Owner_id %>
+    <%= f.collection_select :Owner_id, @owners, :id, :name %>
   </div>
   <div class="actions">
     <%= f.submit %>

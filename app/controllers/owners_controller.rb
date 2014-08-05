@@ -15,10 +15,12 @@ class OwnersController < ApplicationController
   # GET /owners/new
   def new
     @owner = Owner.new
+    @petclubs = PetClub.all
   end
 
   # GET /owners/1/edit
   def edit
+    @petclubs = PetClub.all
   end
 
   # POST /owners
